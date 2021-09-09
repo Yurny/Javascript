@@ -5,6 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Header from './Header';
 import Contenedor from './Contenedor';
+import Footer from './Footer';
 
 ReactDOM.render( 
     <Header /> ,
@@ -15,6 +16,11 @@ ReactDOM.render(
     <Contenedor/>,
     document.getElementById('root')
 );
+
+ReactDOM.render(
+    <Footer/>,
+    document.getElementById('Footer')
+  );
 
 
 

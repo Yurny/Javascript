@@ -1,6 +1,6 @@
 import React from 'react';
 import Estudiante from './Estudiante';
-import Formulario from './Formulario';
+
 
 
 
@@ -47,10 +47,10 @@ const estudiantes = [
 const Contenedor = () =>(
     <>
         {
-           // estudiantes.map( c => <Estudiante nombre={ c.nombre } edad={c.edad} genero={ c.genero} foto={c.foto} /> )
+            estudiantes.map( c => <Estudiante nombre={ c.nombre } edad={c.edad} genero={ c.genero} foto={c.foto} /> )
 
         }
-        <Formulario/>
+        
     </>
 );
 
