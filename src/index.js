@@ -3,25 +3,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Header from './Header';
-import Contenedor from './Contenedor';
-import Footer from './Footer';
-
+import Footer from './Components/Molecule/Footer';
+import App from './App';
 ReactDOM.render( 
-    <Header /> ,
+    <App /> ,
     document.getElementById('header')
-);
-
-ReactDOM.render( 
-    <Contenedor/>,
-    document.getElementById('root')
 );
 
 ReactDOM.render(
     <Footer/>,
-    document.getElementById('Footer')
+    document.getElementById('footer')
   );
-
 
 
 // If you want to start measuring performance in your app, pass a function
