@@ -10,10 +10,7 @@ ReactDOM.render(
     document.getElementById('header')
 );
 
-ReactDOM.render(
-    <Footer/>,
-    document.getElementById('footer')
-  );
+
 
 
 // If you want to start measuring performance in your app, pass a function

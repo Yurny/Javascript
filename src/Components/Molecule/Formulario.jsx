@@ -6,9 +6,9 @@ class Formulario extends Component{
         super(props)
 
         this.state={
-            nombre: "nombre state",
-            apellido: "Apellidos state",
-            edad:"Edad state"
+            nombre: "nombre ",
+            apellido: "Apellidos ",
+            edad:"Edad "
         }
 
         this.cambiarNombre = this.cambiarNombre.bind(this);
@@ -65,9 +65,9 @@ class Formulario extends Component{
                     </form>
                     </center>
                 </h1>
-                <h3>{`Hola ${this.state.nombre}`}</h3>
-                <h3>{`Los ${this.state.apellido}`}</h3>
-                <h3>{`La ${this.state.edad}`}</h3>
+                <div className="badge bg-primary text-wrap" >{`Hola ${this.state.nombre}`}</div>
+                <div className="badge bg-primary text-wrap" >{`Los ${this.state.apellido}`}</div>
+                <div className="badge bg-primary text-wrap" >{`La ${this.state.edad}`}</div>
             </div>
             
 

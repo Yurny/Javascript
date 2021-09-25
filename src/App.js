@@ -7,16 +7,18 @@ import Contacto from './Components/Organism/Contacto';
 import DetalleEstudiante from './Components/Molecule/DetalleEstudiante';
 import MainMenu from './Components/Molecule/MainMenu';
 import Footer from './Components/Molecule/Footer';
+import DatosApi from './Components/Molecule/DatosApi';
 
 function App() {
     return (
       <Router>
         <MainMenu />
         <Switch>
-          <Route path="/" exact component={ Header } />
+          <Route path="/" exact component={ Header, Footer } />
           <Route path="/estudiantes/:id" exact component={ DetalleEstudiante } />
           <Route path="/estudiantes" exact component={ Contenedor } />
           <Route path="/contacto" exact component={ Contacto } />
+          <Route path="/datos_api" exact component={ DatosApi } />
           <Route component={ ()=>(
             <h1>Pagina no encontrada</h1>
           ) } />
